@@ -1,0 +1,1 @@
+/home/alex/.vim/plugged/molokayo/colors/molokayo.vim
