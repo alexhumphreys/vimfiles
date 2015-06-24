@@ -14,6 +14,8 @@ let mapleader = " "
 set nocompatible
 
 " hide defaultmode
+" colorscheme monokai
+set t_Co=256
 
 " first, enable status line always
 " set laststatus=2
