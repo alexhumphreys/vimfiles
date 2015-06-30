@@ -71,13 +71,13 @@ endif
 
 " cursorline to black
 set cursorline
-hi CursorLine cterm=NONE ctermbg=237
+hi CursorLine    cterm=NONE ctermbg=237
 
 " statusline to black
 "hi StatusLine ctermbg=NONE ctermfg=16
-hi StatusLine    ctermfg=15  ctermbg=8 cterm=NONE
+hi StatusLine    ctermfg=15  ctermbg=237 cterm=NONE
 hi StatusLineNC  ctermfg=8  ctermbg=16  cterm=NONE
-hi VertSplit     ctermfg=16  ctermbg=8 cterm=NONE
+hi VertSplit     ctermfg=16  ctermbg=237 cterm=NONE
 
 " turn on rainbow braces
 let g:rainbow_active = 1
