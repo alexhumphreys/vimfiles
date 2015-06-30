@@ -17,3 +17,8 @@ map <leader>f :call BufferNext()<CR>
 function! BufferNext()
   execute ":bn"
 endfunction
+
+map <leader>w :call SplitNext()<CR>
+function! SplitNext()
+  execute ":normal \<C-W>\<C-w>"
+endfunction
