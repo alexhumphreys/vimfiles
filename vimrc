@@ -37,6 +37,8 @@ execute pathogen#infect()
 "syntax on
 "filetype plugin indent on
 
+" 'Focus' on new split
+set splitright
 
 " backup/swap/undo {{{2
 
