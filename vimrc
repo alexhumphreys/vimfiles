@@ -27,7 +27,7 @@ fun! <SID>StripTrailingWhitespaces()
     %s/\s\+$//e
     call cursor(l, c)
 endfun
-autocmd FileType c,cpp,java,php,ruby,python,yaml autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType c,cpp,java,php,ruby,python,yaml,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 " show insert mode
 set showmode
@@ -127,12 +127,18 @@ Plug 'chase/vim-ansible-yaml'
 Plug 'luochen1990/rainbow'
 Plug 'mattn/emmet-vim'
 Plug 'honza/dockerfile.vim'
+Plug 'vim-scripts/logstash.vim'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-salve'
 call plug#end()
 
 "sytastic
 let g:syntastic_check_on_open = 1
 let g:syntastic_python_checkers = ['python', 'pep8']
+let g:syntastic_javascript_checkers = ['jsxhint']
 
 " ctrlp
 let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_root_markers = ['*.egg-info']
+set wildignore+=*.pyc
