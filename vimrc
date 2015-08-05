@@ -4,8 +4,11 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 " make tabs violently obvious
-set list
+nnoremap <F3> :set list!<CR>
 set listchars=tab:>·,extends:⇉,precedes:⇇,nbsp:␠,trail:␠,nbsp:␣
+
+" toggle linenumbers
+nnoremap <F4> :set relativenumber!<CR>
 
 " sort out backspace
 set backspace=2
