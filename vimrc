@@ -3,6 +3,9 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+" make tabs violently obvious
+set list
+set listchars=tab:>·,extends:⇉,precedes:⇇,nbsp:␠,trail:␠,nbsp:␣
 
 " sort out backspace
 set backspace=2
