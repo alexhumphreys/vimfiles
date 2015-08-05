@@ -136,9 +136,14 @@ Plug 'tpope/vim-salve'
 call plug#end()
 
 "sytastic
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_python_checkers = ['python', 'pep8']
 let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_check_on_wq = 0
+let g:syntastic_error_symbol = "☠"
+let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_style_error_symbol = "☢"
+let g:syntastic_style_warning_symbol = "☹"
 
 " ctrlp
 let g:ctrlp_map = '<leader>p'
