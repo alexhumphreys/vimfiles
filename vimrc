@@ -8,6 +8,7 @@ nnoremap <F3> :set list!<CR>
 set listchars=tab:>·,extends:⇉,precedes:⇇,nbsp:␠,trail:␠,nbsp:␣
 
 " toggle linenumbers
+set relativenumber
 nnoremap <F4> :set relativenumber!<CR>
 
 " sort out backspace
@@ -152,4 +153,5 @@ let g:syntastic_style_warning_symbol = "☹"
 let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_root_markers = ['*.egg-info']
+let g:ctrlp_root_markers = ['react-app.jsx']
 set wildignore+=*.pyc
