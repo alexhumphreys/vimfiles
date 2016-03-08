@@ -8,7 +8,7 @@ nnoremap <F3> :set list!<CR>
 set listchars=tab:>·,extends:⇉,precedes:⇇,nbsp:␠,trail:␠,nbsp:␣
 
 " toggle linenumbers
-set relativenumber
+" set relativenumber
 nnoremap <F4> :set relativenumber!<CR>
 
 " sort out backspace
@@ -45,7 +45,7 @@ execute pathogen#infect()
 "filetype plugin indent on
 
 " 'Focus' on new split
-set splitright
+" set splitright
 
 " backup/swap/undo {{{2
 
@@ -148,6 +148,8 @@ let g:syntastic_error_symbol = "☠"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_style_error_symbol = "☢"
 let g:syntastic_style_warning_symbol = "☹"
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
 " ctrlp
 let g:ctrlp_map = '<leader>p'
@@ -155,3 +157,6 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_root_markers = ['*.egg-info']
 let g:ctrlp_root_markers = ['react-app.jsx']
 set wildignore+=*.pyc
+
+" disable auto commenting
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
